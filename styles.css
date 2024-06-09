@@ -2,42 +2,93 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+   
 }
+
 header {
-    background: #333;
-    color: white;
-    padding: 1rem 0;
+    background-color: white;
+    /* background: url('images/Gaia_image.jpg') no-repeat center center fixed;
+    background-size: inherit; */
+    color: #333;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+    height: 10vh;
 }
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-nav ul li {
-    margin: 0 1rem;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-.hero {
+
+.container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: url('images/karan.jpg') no-repeat center center/cover;
-    color: white;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    height: 5vh; /* Make the container full height */
+}
+
+h1, p {
+    margin: 0; /* Remove default margins */
+    padding: 1px; /* Add some padding */
+}
+
+nav ul {
+    background-color: white;
+    list-style: none;
+    padding: 2em;
     text-align: center;
 }
-main section {
-    padding: 2rem;
-    text-align: center;
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    padding: 5em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
 footer {
-    background: #333;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5em;
+}
+
+form input, form textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.7em;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
 }
